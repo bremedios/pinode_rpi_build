@@ -13,3 +13,6 @@
 [submodule "pinode"]
 	path = pinode
 	url = https://github.com/bremedios/pinode.git
+[submodule "WiringPi"]
+	path = WiringPi
+	url = https://github.com/WiringPi/WiringPi.git
