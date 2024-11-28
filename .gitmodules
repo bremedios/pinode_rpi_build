@@ -1,0 +1,15 @@
+[submodule "libdevices_dht22"]
+	path = libdevices_dht22
+	url = https://github.com/bremedios/libdevices_dht22.git
+[submodule "libbpl_storage"]
+	path = libbpl_storage
+	url = https://github.com/bremedios/libbpl_storage.git
+[submodule "libbpl_sys"]
+	path = libbpl_sys
+	url = https://github.com/bremedios/libbpl_sys.git
+[submodule "libbpl_net"]
+	path = libbpl_net
+	url = https://github.com/bremedios/libbpl_net.git
+[submodule "pinode"]
+	path = pinode
+	url = https://github.com/bremedios/pinode.git
