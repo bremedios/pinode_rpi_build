@@ -58,4 +58,8 @@ for MOD in ${MODULES[@]}; do
 	cd $CWD
 done
 
+mkdir -p ~/.config/autostart
+
+cp -rv config/autostart/* ~/.config/autostart/
+
 sudo ldconfig
