@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=PiHeater
+Exec=/usr/local/bin/piheater
