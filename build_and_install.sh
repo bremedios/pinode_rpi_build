@@ -30,6 +30,8 @@ elif [ $# -eq 1 ] ; then
 		BUILD_DEPENDS=1
 	elif [ "$1" == "--update" ] ; then
 		BUILD_UPDATE=1
+	elif [ "$1" == "--build" ] ; then
+		BUILD_PROG=1
 	elif [ "$1" = "--all" ] ; then
 		BUILD_DEPENDS=1
 		BUILD_UPDATE=1
@@ -73,12 +75,18 @@ if [ $BUILD_UPDATE -ne 0 ] ; then
 		#   Checkout the branch only if it does not already exist
 		#
 		if [ ! -d $MOD ]; then
+			echo "Cloning $MOD"
 			git clone https://github.com/bremedios/$MOD.git
+			cd $MOD
 			git checkout $BRANCH
+			cd $CWD
 		fi
 
+		echo "Updating $MOD"
 		cd $MOD
 		git pull
+		cd $CWD
+
 	done
 fi
 
